@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Knowledge Base — Girls In Crypto</title>
+  <meta name="description" content="Browse our comprehensive crypto knowledge base. Learn about blockchain, DeFi, NFTs, trading, security, and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">GC</div>
+        Girls In Crypto
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="learn.html" class="active">Learn</a>
+        <a href="contact.html">Contact</a>
+        <a href="learn.html" class="nav-cta">Start Learning</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="separator">/</span>
+        <span class="current">Knowledge Base</span>
+      </div>
+      <h1>Knowledge Base</h1>
+      <p>Your go-to resource for everything crypto. Browse by category, difficulty, or search for exactly what you need.</p>
+    </div>
+  </section>
+
+  <!-- Search & Filters -->
+  <section class="section">
+    <div class="container">
+      <!-- Search -->
+      <div class="search-section fade-in">
+        <div class="search-wrapper">
+          <span class="search-icon">&#x1F50D;</span>
+          <input type="text" id="searchInput" placeholder="Search articles (e.g. &quot;what is Bitcoin&quot;, &quot;DeFi basics&quot;)" aria-label="Search articles">
+        </div>
+      </div>
+
+      <!-- Category Filters -->
+      <div class="filter-bar fade-in" id="categoryFilters">
+        <button class="filter-btn active" data-category="all">All Topics</button>
+        <button class="filter-btn" data-category="crypto-basics">Crypto Basics</button>
+        <button class="filter-btn" data-category="blockchain">Blockchain</button>
+        <button class="filter-btn" data-category="defi">DeFi</button>
+        <button class="filter-btn" data-category="nfts">NFTs</button>
+        <button class="filter-btn" data-category="trading">Trading</button>
+        <button class="filter-btn" data-category="security">Security</button>
+        <button class="filter-btn" data-category="wallets">Wallets</button>
+      </div>
+
+      <!-- Difficulty Level Filters -->
+      <div class="level-filters fade-in" id="levelFilters">
+        <span>Level:</span>
+        <button class="level-btn active" data-level="all">All</button>
+        <button class="level-btn" data-level="beginner">Beginner</button>
+        <button class="level-btn" data-level="intermediate">Intermediate</button>
+        <button class="level-btn" data-level="advanced">Advanced</button>
+      </div>
+
+      <!-- Category Cards -->
+      <div class="categories-grid fade-in" id="categoriesGrid">
+        <!-- Populated by JS -->
+      </div>
+
+      <!-- Articles Grid -->
+      <div class="articles-grid" id="articlesGrid">
+        <!-- Populated by JS -->
+      </div>
+
+      <!-- No Results -->
+      <div class="no-results" id="noResults" style="display: none;">
+        <h3>No articles found</h3>
+        <p>Try adjusting your search or filters to find what you're looking for.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter CTA -->
+  <section class="newsletter">
+    <div class="container">
+      <h2>Want More Crypto Knowledge?</h2>
+      <p>Subscribe to our newsletter for the latest articles and updates.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Enter your email address" required aria-label="Email address">
+        <button type="submit" class="btn btn-accent">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">GC</div>
+            Girls In Crypto
+          </a>
+          <p>Empowering women of all ages to understand, invest in, and thrive in the world of cryptocurrency and blockchain technology.</p>
+        </div>
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="learn.html">Knowledge Base</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-column">
+          <h4>Learn</h4>
+          <a href="learn.html?category=crypto-basics">Crypto Basics</a>
+          <a href="learn.html?category=blockchain">Blockchain</a>
+          <a href="learn.html?category=defi">DeFi</a>
+          <a href="learn.html?category=nfts">NFTs</a>
+        </div>
+        <div class="footer-column">
+          <h4>More Topics</h4>
+          <a href="learn.html?category=trading">Trading</a>
+          <a href="learn.html?category=security">Security</a>
+          <a href="learn.html?category=wallets">Wallets</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Girls In Crypto. All rights reserved.</p>
+        <p>Built with purpose and passion.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/knowledge-base.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
